@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+body {
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color: #f5f8fa;
+    font-family: Raleway, sans-serif;
+}
+
+.navbar-laravel {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .04);
+}
+
+.navbar-brand, .nav-link {
+    font-family: Raleway, sans-serif;
+}
+
+.dashboard-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 8px;
+}
+
+.header {
+    background-color: #5e72e4;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #5e72e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #182052;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #182052;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 20px;
+}
+
+#sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar nav ul li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#sidebar nav ul li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#sidebar nav ul li a:hover {
+    background-color: #575757;
+}
+
+#content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.profile_img {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* This makes the container square */
+    margin-top: 8%;
+    position: relative; /* This is required for the absolute positioning of the image inside the container */
+    overflow: hidden; /* This ensures any overflow is hidden */
+}
+
+.profile_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire container */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container .card {
+    flex: 1 1 45%; /* Adjusts the flex basis */
+    margin: 10px;
+}
+
+.notification-card, .application-status-card {
+    flex: 1 1 45%; /* Adjusts the flex basis */
+    margin: 10px;
+}
+
+.match-height {
+    display: flex;
+}
+
+.match-height .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.match-height  {
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-right: 1px solid #dee2e6; /* Gray border on the right */
+    min-height: 100vh; /* Ensure sidebar stretches to full height */
+}
+
+.sidebar .nav-link {
+    color: #495057; /* Dark color for links */
+}
+
+.badge-notification {
+    background-color: #182052; /* Red background */
+    color: #fff; /* White text */
+    border-radius: 50%; /* Circular shape */
+    padding: 0.25em 0.5em; /* Padding around the text */
+    font-size: 0.75em; /* Font size */
+    font-weight: bold; /* Bold text */
+    position: relative; /* To position it absolutely */
+    top: -10px; /* Adjust based on your layout */
+    right: -10px; /* Adjust based on your layout */
+    display: inline-block; /* Ensure it sits on the same line */
+}
